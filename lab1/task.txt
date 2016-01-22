@@ -1,0 +1,11 @@
+Task 1a:
+Calculate the prime numbers and through the signal periodically print status. Use "setitimer" interface for periodic alarm. On SIGINT signal temporarily stop the work on next numbers (achieve that stop whit programming solution) or continue to operate if the program previously was stopped. On signal SIGTERM print the last number which is checked (or will be) and finish the work.
+
+Task 1b:
+Write two programs:
+-program that allows the interrupt processing with multi level/priority (simulates the behavior of system without set for receiving interruption)
+-program that generates the signals and sends them to the first process
+
+Each program run in its own shell
+
+ 

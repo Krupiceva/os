@@ -1,0 +1,24 @@
+Task 2a:
+Create a system of parallel processes/threads. An example of the structure of the process or thread is on the following pseudocode:
+proces proc(i)  /*i  [0..n-1] */
+{
+	for k = 1 to k = 5 do {
+		enter in critical section
+		for m = 1 to m = 5 do {
+			print(i, k ,m)
+		}
+	out of critical section
+	}
+}
+
+Instead of the above examples, it can be achieved any other example of mutual exclusion of processes or threads
+Mutual exclusion achieve for two processes or threads with Dekkers algorithm.
+
+Task 2b:
+Achieve a program that simulates the flow of table reservations in a restaurant. Program at hte beginning need to create a certain number of thread/process which is set in the command line. Each thread/process after the expiry of one second check for free tables and randomly selects one of them. After selecting a thread enters the critical section and then verify that the selected table is free. If so, mark the table busy and leave critical section. In both cases, after completing the operation prints the current status of all tables and information on the booking. When printing for each table must be evident if it is free or number of thread/process that reserved it. Number of tables is also set in command line. Each thread/process repeats the same process until there is no more free tables. The program ends when all thread/process is complete.
+
+Protection of crirical sections of the proceedings to book a table needs to be achieved for more process/thread using Lamports mutual exclusion algorithm
+
+Task 2c:
+Expand the first task in first exercise so that prime numbers is searchd using multiple threads. Thread synchronization achieve using Lamports algorithm.
+
