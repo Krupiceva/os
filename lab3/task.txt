@@ -1,0 +1,20 @@
+Task 3a:
+Establish communication between the thread/process producers and consumers using clipboard limited length. Based on the number of command line parameters, the initial thread/process makes certain number of threads/process producers and one consumer. Each producer takes one set of characters given on the command line and sent it via clipboard, char per char to the consumer. The consumer receives one char at the time and when he recevied all characters (including the sign for the end of line '\0' that send him producers), he prints all received characters and ends with the work.
+
+Solve the problem of producers and consumers using a semaphores
+
+Task 3b:
+Solve the same problem of producers and consumers using a monitors
+
+Task 3c:
+Old Bridge is a narrow bridge, and therefore sets limits on traffic. At the same time it can be a maximum of three cars driving in the same direction (because the bridge is narrow and old). Simulate cars with thread "Auto" that performs the following actions. Write a program that creates a given number of cars and each car is given a number. Direction of the car is determined randomly.
+
+accomplish the task using thread and synchronize them with monitor
+
+Dretva Auto(X, smjer){ // X = rbr auta, smjer = 0 ili 1
+   ispiši("Auto X čeka na prelazak preko mosta");
+   Popni_se_na_most(smjer);
+   prijeđi_most;
+   Siđi_s_mosta();
+   ispiši("Auto X je prešao most");
+}
